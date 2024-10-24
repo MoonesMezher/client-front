@@ -1,0 +1,7 @@
+@media screen and (max-height: 700px) {
+    .hero,
+    .hero-grid {
+        height: 800px !important;
+        max-height: 800px !important;
+    }
+}
