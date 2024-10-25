@@ -22,10 +22,9 @@ import MessagesAdmin from "./pages/MessagesAdmin/MessagesAdmin"
 import CvAdmin from "./pages/CVAdmin/CvAdmin"
 import StatisticsAdmin from "./pages/StatisticsAdmin/StatisticsAdmin"
 import { useEffect, useState } from "react"
-import Blogs from "./pages/Blogs/Blogs"
-import Blog from "./pages/Blog/Blog"
+// import Blogs from "./pages/Blogs/Blogs"
+// import Blog from "./pages/Blog/Blog"
 import ErrorPage from "./pages/Error/Error"
-import SplashScreen from "./pages/SplashScreen/SplashScreen"
 
 function App() {
   const [admin, setAdmin] = useState(localStorage.getItem("admin-moones"));
@@ -36,18 +35,10 @@ function App() {
     window.scrollTo(0, 0);
   }, [pathname])
 
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-        setIsLoading(false)
-    }, 3000);
-  }, [])
-
   return (
     <Layout>
       <Routes>
-        <Route path="/" element={isLoading? <SplashScreen/>:<Home/>}/>
+        <Route path="/" element={<Home/>}/>
         {/* <Route path="/blogs" element={<Blogs/>}/> */}
         {/* <Route path="/blogs/:slug" element={<Blog/>}/> */}
         <Route path="/login" element={!admin?<Login/>: <Navigate to={"/mm-admin"}/>}/>

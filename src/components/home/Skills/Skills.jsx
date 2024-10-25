@@ -6,26 +6,30 @@ import { LuBrainCircuit } from "react-icons/lu"
 import { useEffect, useState } from "react"
 import API from "../../../api"
 import axios from "axios"
-import Img1 from "../../../assets/images/skills/html.jpg"
-import Img2 from "../../../assets/images/skills/JS.jpg"
-import Img3 from "../../../assets/images/skills/Next.jpg"
-import Img4 from "../../../assets/images/skills/React.jpg"
-import Img5 from "../../../assets/images/skills/node.jpg"
-import Img6 from "../../../assets/images/skills/hosting.jpg"
-import Img7 from "../../../assets/images/skills/mongodb.jpg"
-import Img8 from "../../../assets/images/skills/self-learninig.jpg"
+import Img1 from "../../../assets/images/skills/html.webp"
+import Img2 from "../../../assets/images/skills/JS.webp"
+import Img3 from "../../../assets/images/skills/Next.webp"
+import Img4 from "../../../assets/images/skills/React.webp"
+import Img5 from "../../../assets/images/skills/node.webp"
+import Img6 from "../../../assets/images/skills/hosting.webp"
+import Img7 from "../../../assets/images/skills/mongodb.webp"
+import Img8 from "../../../assets/images/skills/self-learninig.webp"
 import Img9 from "../../../assets/images/skills/time-management.jpg"
 import Img10 from "../../../assets/images/skills/tailwind-css.jpg"
 import Img11 from "../../../assets/images/skills/TS.jpg"
-import Img12 from "../../../assets/images/skills/CSS.jpg"
-import Img13 from "../../../assets/images/skills/Express.jpg"
+import Img12 from "../../../assets/images/skills/CSS.webp"
+import Img13 from "../../../assets/images/skills/Express.webp"
 import Img14 from "../../../assets/images/skills/Threejs.jpg"
-import Img15 from "../../../assets/images/skills/graphql.jpg"
-import Img16 from "../../../assets/images/skills/fastify.jpeg"
-import Img17 from "../../../assets/images/skills/mysql.jpeg"
-import Img18 from "../../../assets/images/skills/scss.jpeg"
-import Img19 from "../../../assets/images/skills/github.jpeg"
-import Img20 from "../../../assets/images/skills/expo.jpeg"
+import Img15 from "../../../assets/images/skills/graphql.webp"
+import Img16 from "../../../assets/images/skills/fastify.webp"
+import Img17 from "../../../assets/images/skills/mysql.webp"
+import Img18 from "../../../assets/images/skills/scss.webp"
+import Img19 from "../../../assets/images/skills/github.webp"
+import Img20 from "../../../assets/images/skills/expo.webp"
+import Img21 from "../../../assets/images/skills/SEO.webp"
+import Img22 from "../../../assets/images/skills/problem-solving.webp"
+import Img23 from "../../../assets/images/skills/leadership.webp"
+import Img24 from "../../../assets/images/skills/monitoring.webp"
 
 const data = [
     {
@@ -111,7 +115,12 @@ const data = [
     {
         title: 'Git & Github',
         img: Img19,
-        subtitle: 'Managing code versions and collaboration using Git & Github, employing branching strategies and pull requests for effective teamwork',
+        subtitle: 'Managing code versions and collaboration using Git & Github, employing branching strategies and pull requests for effective teamwork.',
+    },
+    {
+        title: 'SEO Best Practices',
+        img: Img21,
+        subtitle: 'Implementing SEO best practices to improve website visibility and ranking on search engines, driving organic traffic.',
     },
     {
         title: 'Hosting',
@@ -122,6 +131,21 @@ const data = [
         title: 'Self learning',
         img: Img8,
         subtitle: 'Continuously updating my skills and knowledge in web development, staying up-to-date with industry trends and best practices.',
+    },
+    {
+        title: 'Problem-Solving',
+        img: Img22,
+        subtitle: 'Approaching challenges with a solution-oriented mindset, utilizing critical thinking to identify and implement effective solutions.',
+    },
+    {
+        title: 'Leadership',
+        img: Img23,
+        subtitle: 'Inspiring and guiding team members towards achieving objectives, fostering a collaborative and motivated work environment.',
+    },
+    {
+        title: 'Mentoring',
+        img: Img24,
+        subtitle: 'Guiding and supporting less experienced colleagues, sharing knowledge and fostering their professional growth.',
     },
     {
         title: 'Time management',

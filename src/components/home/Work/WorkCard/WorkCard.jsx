@@ -18,7 +18,7 @@ const WorkCard = ( { info } ) => {
             >
                 { info.description }
             </Typography> */}
-            {info.link && <a href={info.link} className="mt-5 block">
+            {info.link && <a href={info.link} target="_blank" className="mt-5 block">
                     <Button variant="outlined" className="flex-shrink-0">
                     see now
                     </Button>
